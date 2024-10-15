@@ -2,18 +2,10 @@
 # GoodDeed: Sistem Donasi Uang atau Barang 
 
 ## Background
-GoodDeed adalah sebuah platform digital inovatif yang dirancang untuk memfasilitasi donasi 
-uang dan barang dari para donatur kepada individu atau organisasi yang membutuhkan. Proyek 
-ini bertujuan untuk mengatasi masalah transparansi, efisiensi, dan jangkauan dalam proses 
-donasi tradisional. 
+GoodDeed is an innovative digital platform designed to facilitate monetary and goods donations from donors to individuals or organizations in need. This project aims to address issues of transparency, efficiency, and reach in the traditional donation process.
 
-
-Metodologi 
-Metodologi yang digunakan dalam proyek GoodDeed adalah Object-Oriented Programming 
-(OOP). Pendekatan ini dipilih karena kemampuannya dalam memodelkan sistem yang 
-kompleks menjadi objek-objek yang saling berinteraksi, sehingga memudahkan 
-pengembangan, pengujian, dan pemeliharaan. Aplikasi ini juga menggunakan design pattern 
-seperti abstract factory, adapter, singleton, dan facade. Sehingga dapat menghasilkan sistem yang memnuhi prinsip SOLID.
+## Methodology
+The methodology used in the GoodDeed project is Object-Oriented Programming (OOP). This approach was chosen for its ability to model complex systems into interacting objects, making development, testing, and maintenance easier. The application also incorporates design patterns such as abstract factory, adapter, singleton, and facade, ensuring the system adheres to SOLID principles.
 
 ## Use Case
 ![App Screenshot](useCase.png)
@@ -25,18 +17,10 @@ seperti abstract factory, adapter, singleton, dan facade. Sehingga dapat menghas
 ![App Screenshot](goodDeed.png)
 
 
-Proyek GoodDeed, sistem donasi uang dan barang, memiliki potensi yang signifikan untuk 
-merevolusi lanskap filantropi. Dengan mengatasi tantangan transparansi, efisiensi, dan 
-jangkauan dalam proses donasi tradisional, GoodDeed bertujuan untuk menciptakan platform 
-yang memberdayakan donatur dan penerima manfaat.  
+## Conclusion
+The GoodDeed project, a donation system for money and goods, holds significant potential to revolutionize the philanthropic landscape. By addressing the challenges of transparency, efficiency, and reach in the traditional donation process, GoodDeed aims to create a platform that empowers both donors and beneficiaries.
 
-Pendekatan layered architecture yang diadopsi dalam pengembangan GoodDeed memastikan 
-skalabilitas, modularitas, dan kemudahan pemeliharaan sistem. Ini memungkinkan tim 
-pengembang untuk fokus pada peningkatan dan penambahan fitur secara independen, tanpa 
-mengganggu fungsi keseluruhan platform.  
+The layered architecture approach adopted in the development of GoodDeed ensures scalability, modularity, and ease of maintenance. This allows the development team to focus on enhancing and adding features independently without disrupting the platform's overall functionality.
 
-Diharapkan bahwa GoodDeed akan menjadi katalisator dalam mendorong partisipasi 
-masyarakat dalam kegiatan donasi. Dengan menyediakan platform yang aman, transparan, dan 
-mudah digunakan, GoodDeed dapat menginspirasi lebih banyak individu untuk berbagi 
-kebaikan dan memberikan dampak positif bagi mereka yang membutuhkan. 
+GoodDeed is expected to serve as a catalyst for increasing community participation in charitable activities. By providing a secure, transparent, and user-friendly platform, GoodDeed can inspire more individuals to share kindness and make a positive impact on those in need.
 
