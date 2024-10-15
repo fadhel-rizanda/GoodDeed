@@ -21,6 +21,9 @@ seperti abstract factory, adapter, singleton, dan facade. Sehingga dapat menghas
 ## Class Diagram
 ![App Screenshot](classDiagram.png)
 
+## Application
+![App Screenshot](goodDeed.png)
+
 
 Proyek GoodDeed, sistem donasi uang dan barang, memiliki potensi yang signifikan untuk 
 merevolusi lanskap filantropi. Dengan mengatasi tantangan transparansi, efisiensi, dan 
