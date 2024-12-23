@@ -115,7 +115,40 @@ public class DonationValidationFacade {
         String cancelDonationID;
         String cancelProcess = "N";
 
-        viewDonationList();
+	 Vector<Donation> viewDonationList = database.readDonationList();
+        MoneyAdapter moneyAdapter = new MoneyAdapter();
+        if (viewDonationList.isEmpty()) {
+            System.out.println("No Donations Made Yet");
+            return;
+        } else {
+            System.out.println("=============================================================================================================================================================================");
+            System.out.printf("|| %-167s ||\n","                                                                   GoodsDeed Donation List");
+            System.out.println("=============================================================================================================================================================================");
+            System.out.printf("|| %-2s || %-12s || %-20s || %-15s || %-15s || %-20s || %-30s || %-25s ||\n",
+                                "No", "Donation ID", "    Donator Name", "Donator Contact", " Donation Type", "Donation Description", "        Donation Ammount", "    Donation Message");
+            System.out.println("=============================================================================================================================================================================");
+
+            int no = 1;
+
+            for (Donation donation : viewDonationList) {
+                String format = "|| %-2d || %-12s || %-20s || %-15s || %-15s || %-20s || %-30s || %-25s ||\n";
+                if (donation.getDonationType().equals("Money")) {
+                   if(donation.getDonationDescription().equals("Dollar") || donation.getDonationDescription().equals("Euro")) {
+                	   System.out.printf(format, no++, donation.getDonationID(), donation.getDonatorName(), donation.getDonatorContact(), donation.getDonationType(), donation.getDonationDescription(), donation.getDonationAmount() 
+                			   + " (Rp " + moneyAdapter.convertToRupiah(donation.getDonationDescription(), donation.getDonationAmount()) + ")", donation.getDonationMessage());
+                   }
+                   else {
+                	   System.out.printf(format, no++, donation.getDonationID(), donation.getDonatorName(), donation.getDonatorContact(), donation.getDonationType(), donation.getDonationDescription(),
+                			   "Rp " + donation.getDonationAmount(), donation.getDonationMessage());
+                   }
+                } else {
+                    System.out.printf(format, no++, donation.getDonationID(), donation.getDonatorName(), donation.getDonatorContact(), donation.getDonationType(), donation.getDonationDescription(), 
+                    		+donation.getDonationAmount() + " items", donation.getDonationMessage());
+                }
+            }
+
+            System.out.println("=============================================================================================================================================================================");        
+        }
 
         if (cancelDonationList.isEmpty()) {
             return;
