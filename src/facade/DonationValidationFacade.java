@@ -115,40 +115,6 @@ public class DonationValidationFacade {
         String cancelDonationID;
         String cancelProcess = "N";
 
-        viewDonationList();
-
-        if (cancelDonationList.isEmpty()) {
-            return;
-        }
-        System.out.println();
-        do {            
-            System.out.print("Input Donation ID to cancel donation: ");
-            cancelDonationID = scan.nextLine();
-
-            for (Donation donation : cancelDonationList) {
-                if (cancelDonationID.equals(donation.getDonationID())) {
-                    database.deleteDonationList(cancelDonationID);
-                    System.out.println("Your Cancelation Process Succeed");
-                    System.out.println("Your Donation Has Been Canceled");
-                    return;
-                }
-            }
-
-            System.out.println("Invalid Donation ID. Please try again");
-            do {
-                System.out.print("Do you want to continue Process [Y|N]: ");
-                cancelProcess = scan.nextLine();
-            } while (!(cancelProcess.equals("Y") || cancelProcess.equals("N")));
-
-        } while (cancelProcess.equalsIgnoreCase("Y"));
-        System.out.println("Your Cancelation Process Has Been Terminated");
-    }
-
-	    public void cancelDonation() {
-        Vector<Donation> cancelDonationList = database.readDonationList();
-        String cancelDonationID;
-        String cancelProcess = "N";
-
 	 Vector<Donation> viewDonationList = database.readDonationList();
         MoneyAdapter moneyAdapter = new MoneyAdapter();
         if (viewDonationList.isEmpty()) {
